@@ -1,0 +1,34 @@
+.NavbarMenu {
+    cursor: pointer;
+    transition: .3s;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.NavbarMenu svg {
+    transition: .3s;
+    fill: var(--whiteGrey);
+}
+
+.NavbarMenu:hover {
+    background: var(--darkButtonDefaultBg);
+}
+
+.NavbarMenu:hover svg {
+    fill: var(--orangeColor) !important;
+    ;
+}
+
+.NavbarMenu a {
+    display: flex;
+    align-items: center;
+}
+
+.NavbarMenu h3 {
+    margin-left: 23px;
+    color: var(--whiteGrey);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}

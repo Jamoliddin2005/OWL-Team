@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Space+Grotesk:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  transition: .3s;
+}
+
+:root {
+  --familySpaceGrotesk: "Space Grotesk", sans-serif;
+  --whiteColor: #fff;
+  --whiteGrey: #999cb1;
+  --darkColor: #0a0b10;
+  --greyColor: #4c4e5d;
+  --errorTextColor: #e23147;
+  --inputBg: #181920;
+  --orangeColor: #ff6b3c;
+  --textGrey: #4C4E5E;
+  --navLeftBg: #0E0F13;
+  /* Buttons */
+  --defaultButtonBg: #ff6b3c;
+  --hoverButtonBg: #ff825b;
+  --pressButtonBg: #ea5b2d;
+
+  /* Dark Buttons */
+  --darkButtonDefaultBg: #181920;
+  --darkButtonHoverBg: #4c4e5d;
+  --darkButtonPressBg: #13141a;
+
+  /* Grey Buttons */
+  --greyButtonSuccess: rgba(57, 255, 128, 0.2);
+  --greyButtonError: rgba(255, 107, 60, 0.2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}

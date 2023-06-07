@@ -1,0 +1,52 @@
+.Navbar .nav_left {
+    width: 96px;
+    background-color: var(--navLeftBg);
+    padding: 30px 20px;
+    transition: .3s;
+    min-height: 100vh;
+}
+
+.Navbar .nav_left.active {
+    width: 300px;
+}
+
+.nav_left_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav_left_logo a {
+    font-family: var(--familySpaceGrotesk);
+    display: flex;
+    color: var(--whiteColor);
+    align-items: center;
+}
+
+.nav_left_logo a img {
+    margin-right: 10px;
+}
+
+.nav_left_logo .toggle {
+    padding: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.toggleActive {
+    transform: rotate(180deg);
+}
+
+.Navbar .nav_left .nav_menu {
+    margin-top: 40px;
+}
+
+.Navbar .nav_left .nav_menu span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--textGrey);
+    margin-bottom: 20px;
+    display: block;
+}
