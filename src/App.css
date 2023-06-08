@@ -14,6 +14,10 @@ button {
   transition: .3s;
 }
 
+button {
+  cursor: pointer;
+}
+
 :root {
   --familySpaceGrotesk: "Space Grotesk", sans-serif;
   --whiteColor: #fff;
@@ -29,19 +33,60 @@ button {
   --defaultButtonBg: #ff6b3c;
   --hoverButtonBg: #ff825b;
   --pressButtonBg: #ea5b2d;
-
   /* Dark Buttons */
   --darkButtonDefaultBg: #181920;
   --darkButtonHoverBg: #4c4e5d;
   --darkButtonPressBg: #13141a;
-
   /* Grey Buttons */
   --greyButtonSuccess: rgba(57, 255, 128, 0.2);
   --greyButtonError: rgba(255, 107, 60, 0.2);
+  --greyBorderColor: #1F2128;
+
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+
+body {
+  background-color: var(--darkColor);
+}
+
+
+.container_On {
+  margin-top: 130px;
+  margin-left: 350px;
+  transition: .3s;
+}
+
+.container_Off {
+  margin-top: 130px;
+  transition: .3s;
+  margin-left: 140px;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
+  background-color: rgba(24, 25, 32, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--defaultButtonBg);
+  border-radius: 10px;
+}
+
+
+.LogOutBackgound {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .3);
 }

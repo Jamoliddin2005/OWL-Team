@@ -11,15 +11,6 @@
     fill: var(--whiteGrey);
 }
 
-.NavbarMenu:hover {
-    background: var(--darkButtonDefaultBg);
-}
-
-.NavbarMenu:hover svg {
-    fill: var(--orangeColor) !important;
-    ;
-}
-
 .NavbarMenu a {
     display: flex;
     align-items: center;
@@ -31,4 +22,22 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    transition: .3s;
+}
+
+.NavbarMenu:hover {
+    background: var(--darkButtonDefaultBg);
+}
+
+.NavbarMenu:hover h3 {
+    color: var(--whiteColor);
+}
+
+.NavbarMenu:hover svg {
+    fill: var(--orangeColor) !important;
+}
+
+
+.logOut a h3{
+    color: var(--errorTextColor);
 }

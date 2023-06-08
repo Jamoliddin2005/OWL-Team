@@ -1,0 +1,81 @@
+.Notification {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    width: 400px;
+    border: 1px solid var(--greyBorderColor);
+    background: var(--navLeftBg);
+    box-shadow: 0px 4px 25px 10px var(--darkColor);
+    border-radius: 14px;
+}
+
+.NotificationNavbar {
+    padding: 20px;
+    border-bottom: 1px solid var(--greyBorderColor);
+    margin-bottom: 10px;
+}
+
+.NotificationNavbar h3 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--whiteColor);
+}
+
+.Notifications {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.Notifications .New {
+    padding: 20px;
+}
+
+.Notifications .New .newTitle {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.Notifications .New .newTitle h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+
+}
+
+.newIcon {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: var(--orangeColor);
+    margin-left: 8px;
+}
+
+
+.Notifications .New .newsDesc p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+    margin-bottom: 20px;
+}
+
+.Notifications .New .date {
+    border-bottom: 1px solid var(--greyBorderColor);
+    padding-bottom: 20px;
+
+}
+
+.Notifications .New .date span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--greyColor);
+
+}

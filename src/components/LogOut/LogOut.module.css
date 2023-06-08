@@ -1,0 +1,82 @@
+.LogOut {
+    height: 242px;
+    width: 500px;
+    border-radius: 14px;
+    background: var(--navLeftBg);
+    border: 1px solid var(--greyBorderColor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    z-index: 10;
+}
+
+.LogOut .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.LogOut h2 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--whiteColor);
+    margin-bottom: 10px;
+}
+
+.LogOut p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--greyColor);
+    margin-bottom: 80px;
+}
+
+.LogOut .buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.LogOut .buttons button {
+    width: 213px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+}
+
+.LogOut .buttons button:first-child {
+    background: var(--orangeColor);
+}
+
+.LogOut .buttons button:first-child:hover {
+    background: var(--hoverButtonBg);
+}
+
+.LogOut .buttons button:first-child:active {
+    background: var(--pressButtonBg);
+}
+
+
+/*  */
+.LogOut .buttons button:last-child {
+    background: var(--darkButtonDefaultBg);
+    color: var(--whiteColor);
+}
+
+.LogOut .buttons button:last-child:hover {
+    background: var(--darkButtonHoverBg);
+}
+
+.LogOut .buttons button:last-child:active {
+    background: var(--darkButtonPressBg);
+}

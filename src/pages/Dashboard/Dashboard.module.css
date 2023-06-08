@@ -1,0 +1,428 @@
+.dashboardLeft .dashboardLeftTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboardLeft .dashboardLeftTop h2 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--whiteColor);
+}
+
+.dashboardLeft .dashboardLeftTop h2 span {
+    color: var(--orangeColor);
+}
+
+.dashboardLeft .dashboardLeftTop h3 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--whiteColor);
+}
+
+.dashboardLeft .dashboardLeftTop h3 span {
+    color: var(--textGrey);
+}
+
+.dashboardStolen {
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.dashboardStolen,
+.dashboardStolen .stolen {
+    display: flex;
+    align-items: center;
+}
+
+.dashboardStolen .stolen {
+    width: 370px;
+    border: 1px solid var(--greyBorderColor);
+    border-radius: 14px;
+    padding: 37px 30px;
+    justify-content: space-between;
+}
+
+.dashboardStolen .stolen .stolenLeft h3 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: var(--whiteColor);
+    margin-bottom: 8px;
+}
+
+.dashboardStolen .stolen .stolenLeft span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--whiteGrey);
+}
+
+/* lastLogs started */
+
+.lastLogs {
+    background: var(--navLeftBg);
+    border: 1px solid var(--greyBorderColor);
+    border-radius: 14px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.logs_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.logs_top h4 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--whiteColor);
+}
+
+.logs_top a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--orangeColor);
+}
+
+.logs_top a svg {
+    fill: var(--orangeColor);
+    transform: rotate(180deg);
+    margin-left: 5px;
+}
+
+.logs_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--whiteGrey);
+    border-bottom: 1px solid var(--greyBorderColor);
+    margin-top: 40px;
+    padding: 0 30px;
+    padding-bottom: 10px;
+}
+
+
+.products {
+    max-height: 43vh;
+    overflow-y: scroll;
+}
+
+.products .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    color: var(--whiteColor);
+}
+
+
+.products .product:nth-child(even) {
+    background-color: rgba(24, 25, 32, 0.3);
+}
+
+.products .product .productLink {
+    background: var(--darkButtonDefaultBg);
+    border-radius: 8px;
+    padding: 8.5px 14px;
+    cursor: pointer;
+}
+
+
+
+.logs_nav li:nth-child(1),
+.products .product .productId:nth-child(1) {
+    width: 50px;
+}
+
+.logs_nav li:nth-child(2),
+.products .product .productLink:nth-child(2) {
+    width: 175px;
+}
+
+.logs_nav li:nth-child(3) {
+    width: 175px;
+}
+
+.logs_nav li:nth-child(4) {
+    width: 77px;
+}
+
+.logs_nav li:nth-child(5) {
+    width: 124px;
+}
+
+
+.products .product .productChainName {
+    width: 185px;
+}
+
+.products .product .productAmount {
+    width: 85px;
+}
+
+.products .product .productDate {
+    width: 121px;
+}
+
+.products .product button {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 14px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+}
+
+.success {
+    background: var(--greyButtonSuccess);
+    color: #C2E6CE;
+}
+
+.waiting {
+    color: #FF8B66;
+    background: var(--greyButtonError);
+}
+
+
+.showBtn {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(14, 15, 19, 0) 0%, #0E0F13 31.58%);
+    border-radius: 0px 0px 14px 14px;
+    padding: 0 30px;
+}
+
+
+.showBtn a {
+    width: 100%;
+    display: block;
+    background: var(--inputBg);
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+}
+
+.dashboardRight {
+    margin-left: 30px;
+}
+
+.RightBalance {
+    background: var(--navLeftBg);
+    border: 1px solid var(--greyBorderColor);
+    border-radius: 14px;
+    width: 350px;
+    padding: 30px;
+}
+
+.RightBalance p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteGrey);
+    margin-bottom: 5px;
+}
+
+.RightBalance h2 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: var(--whiteColor);
+    margin-bottom: 30px;
+}
+
+.RightBalance h2 span {
+    color: var(--orangeColor);
+}
+
+.RightBalance button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    justify-content: center;
+    padding: 12px;
+    background: var(--defaultButtonBg);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--darkColor);
+    margin-bottom: 30px;
+}
+
+
+.RightBalance button:hover {
+    background: var(--hoverButtonBg);
+}
+
+.RightBalance button svg {
+    margin-right: 10px;
+}
+
+.RightBalance .balanceBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid var(--greyBorderColor);
+}
+
+
+.RightBalance .balanceBottom .leftB span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteGrey);
+    margin-bottom: 5px;
+}
+
+.RightBalance .balanceBottom .leftB h2 {
+    display: flex;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+}
+
+.RightBalance .balanceBottom .rightB svg {
+    fill: var(--orangeColor);
+}
+
+
+/* transactions started */
+.transactions {
+    background: var(--navLeftBg);
+    border: 1px solid var(--greyBorderColor);
+    border-radius: 14px;
+    margin-top: 30px;
+}
+
+.transactions .transactionsTop {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transactions .transactionsTop h4 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--whiteColor);
+}
+
+.transactions .transactionsTop a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--orangeColor);
+}
+
+.transactions .transactionsTop a svg {
+    fill: var(--orangeColor);
+    transform: rotate(180deg);
+    margin-left: 5px;
+}
+
+.transactionIcon svg {
+    fill: var(--whiteColor);
+}
+
+.IncomeClass svg {
+    fill: #1FD661;
+}
+
+.transactionMonkey span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+}
+
+.IncomeClass .transactionMonkey span {
+    color: #1FD661;
+}
+
+.transaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.transactionLeft {
+    display: flex;
+    align-items: center;
+}
+
+.transactionLeft .transactionTitle h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+    margin-bottom: 4px;
+}
+
+.transactionLeft .transactionTitle p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--greyColor);
+
+}
+
+.transaction:nth-child(even) {
+    background: rgba(24, 25, 32, 0.3);
+}
+
+.transactionsItem {
+    max-height: 36vh;
+    overflow-y: scroll;
+}
+
+.showTransactions {
+    padding: 30px;
+    padding-bottom: 20px;
+}
+
+.showTransactions a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: var(--darkButtonDefaultBg);
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+}
