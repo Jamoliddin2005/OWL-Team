@@ -6,11 +6,12 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Navbar from "./components/Navbar/Navbar";
 import { useEffect, useState } from "react";
 import LogOut from "./components/LogOut/LogOut";
+import Withdrawal from "./components/Withdrawal/Withdrawal";
 
 function App() {
   const [url, setUrl] = useState("");
   const [toggle, setToggle] = useState(true);
-  const [logOutToggle, setLogOutToggle] = useState(true);
+  const [logOutToggle, setLogOutToggle] = useState(false);
 
   useEffect(() => {
     setUrl(window.location.pathname.split("/")[1]);
@@ -18,8 +19,13 @@ function App() {
 
   return (
     <div className="OWLTeam">
-      {url === "auth" || <Navbar setLogOutToggle={setLogOutToggle} toggle={toggle} setToggle={setToggle} />}
-
+      {url === "auth" || (
+        <Navbar
+          setLogOutToggle={setLogOutToggle}
+          toggle={toggle}
+          setToggle={setToggle}
+        />
+      )}
       <Routes>
         <Route path="/auth" element={<Auth />} />
         <Route
@@ -27,7 +33,6 @@ function App() {
           element={<Dashboard toggle={toggle} setToggle={setToggle} />}
         />
       </Routes>
-
       {logOutToggle && (
         <div
           className={"LogOutBackgound"}
@@ -37,6 +42,7 @@ function App() {
         ></div>
       )}
       {logOutToggle && <LogOut setLogOutToggle={setLogOutToggle} />}
+      <Withdrawal />
     </div>
   );
 }
