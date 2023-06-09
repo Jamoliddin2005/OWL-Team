@@ -3,8 +3,8 @@
     background-color: var(--navLeftBg);
     padding: 30px 20px;
     transition: .3s;
-    min-height: 100vh;
     position: absolute;
+    height: -webkit-fill-available;
     z-index: 4;
     top: 0;
     left: 0;
@@ -196,5 +196,18 @@
     width: 85%;
     border-top: 1px solid var(--greyBorderColor);
     padding-top: 40px;
+}
 
+.toggleBottomLinks {
+    width: auto;
+}
+
+@media(max-height:930px) {
+    .nav_bottom {
+        position: static;
+    }
+
+    .Navbar .nav_left {
+        height: auto;
+    }
 }

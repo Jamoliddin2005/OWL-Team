@@ -1,3 +1,7 @@
+.dashboardLeft {
+    width: 70%;
+}
+
 .dashboardLeft .dashboardLeftTop {
     display: flex;
     align-items: center;
@@ -38,7 +42,7 @@
 }
 
 .dashboardStolen .stolen {
-    width: 370px;
+    width: 33%;
     border: 1px solid var(--greyBorderColor);
     border-radius: 14px;
     padding: 37px 30px;
@@ -219,15 +223,35 @@
     color: var(--whiteColor);
 }
 
+.showBtn a,
+.showTransactions a {
+    transition: .3s
+}
+
+.showBtn a:hover,
+.showTransactions a:hover {
+    background-color: var(--darkButtonHoverBg);
+}
+
+.showBtn a:active,
+.showTransactions a:active {
+    background-color: var(--darkButtonPressBg);
+}
+
 .dashboardRight {
-    margin-left: 30px;
+    width: 26%;
+    margin-right: 30px;
+}
+
+.row {
+    justify-content: space-between;
 }
 
 .RightBalance {
     background: var(--navLeftBg);
     border: 1px solid var(--greyBorderColor);
     border-radius: 14px;
-    width: 350px;
+    width: 100%;
     padding: 30px;
 }
 

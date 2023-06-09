@@ -76,10 +76,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--defaultButtonBg);
+  background-color: var(--whiteGrey);
   border-radius: 10px;
 }
-
 
 .LogOutBackgound {
   position: fixed;

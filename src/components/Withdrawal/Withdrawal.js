@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "../LogOut/LogOut.module.css";
 
-function Withdrawal() {
+function Withdrawal({ setWithdrawalToggle }) {
   return (
     <div className={classes.Withdrawal}>
-      <div className={classes.close}>
+      <div className={classes.close} onClick={() => setWithdrawalToggle(false)}>
         <svg
           width="24"
           height="24"
@@ -75,12 +75,7 @@ function Withdrawal() {
 
         <div className={classes.buttons}>
           <button type="submit">Confirm</button>
-          <button
-            type="submit"
-            onClick={() => {
-              //
-            }}
-          >
+          <button type="submit" onClick={() => setWithdrawalToggle(false)}>
             Cancel
           </button>
         </div>

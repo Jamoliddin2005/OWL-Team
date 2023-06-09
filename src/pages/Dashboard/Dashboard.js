@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import classes from "./Dashboard.module.css";
 import { Link } from "react-router-dom";
 
-function Dashboard({ toggle }) {
+function Dashboard({ toggle, setWithdrawalToggle }) {
   // const [logs,setLogs] = useState([""]);
 
   const logs = [
@@ -220,7 +220,7 @@ function Dashboard({ toggle }) {
               <h2>
                 <span>$</span> 300.25
               </h2>
-              <button>
+              <button onClick={() => setWithdrawalToggle(true)}>
                 <svg
                   width="25"
                   height="24"
@@ -338,9 +338,9 @@ function Dashboard({ toggle }) {
                   </div>
                 ))}
               </div>
-                <div className={classes.showTransactions}>
-                  <Link to={"/"}>Show all transactions</Link>
-                </div>
+              <div className={classes.showTransactions}>
+                <Link to={"/"}>Show all transactions</Link>
+              </div>
             </div>
           </div>
         </div>

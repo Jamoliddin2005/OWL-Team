@@ -1,7 +1,7 @@
 .NavbarMenu {
     cursor: pointer;
     transition: .3s;
-    padding: 15px;
+
     border-radius: 8px;
     margin-bottom: 5px;
 }
@@ -14,6 +14,7 @@
 .NavbarMenu a {
     display: flex;
     align-items: center;
+    padding: 15px;
 }
 
 .NavbarMenu h3 {
@@ -25,19 +26,22 @@
     transition: .3s;
 }
 
-.NavbarMenu:hover {
+.NavbarMenu:hover,
+.active {
     background: var(--darkButtonDefaultBg);
 }
 
-.NavbarMenu:hover h3 {
+.NavbarMenu:hover h3,
+.active h3 {
     color: var(--whiteColor);
 }
 
-.NavbarMenu:hover svg {
+.NavbarMenu:hover svg,
+.active svg {
     fill: var(--orangeColor) !important;
 }
 
 
-.logOut a h3{
+.logOut a h3 {
     color: var(--errorTextColor);
 }

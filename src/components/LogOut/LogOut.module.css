@@ -157,3 +157,8 @@ h2 {
     width: fit-content;
     margin-left: 13px;
 }
+
+.changePass {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}

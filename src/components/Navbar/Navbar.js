@@ -5,7 +5,14 @@ import NavbarMenu from "../NavbarMenu/NavbarMenu";
 import Language from "../Language/Language";
 import Notification from "../Notification/Notification";
 
-function Navbar({ toggle, setToggle, setLogOutToggle }) {
+function Navbar({
+  toggle,
+  setToggle,
+  setLogOutToggle,
+  url,
+  GetUrl,
+  setChangePasswordToggle,
+}) {
   const [lanBg, setLanBg] = useState(false);
   const [notificationToggle, setNotificationToggle] = useState(false);
   const [search, setSearch] = useState("");
@@ -148,6 +155,8 @@ function Navbar({ toggle, setToggle, setLogOutToggle }) {
           <ul>
             {menu.map((item, index) => (
               <NavbarMenu
+                url={url}
+                GetUrl={GetUrl}
                 key={index}
                 toggle={toggle}
                 name={item.name}
@@ -159,6 +168,8 @@ function Navbar({ toggle, setToggle, setLogOutToggle }) {
         <div className={classes.adminMenu}>
           <span> {toggle && "ADMIN MENU"}</span>
           <NavbarMenu
+            url={url}
+            GetUrl={GetUrl}
             toggle={toggle}
             name={"Users & Results"}
             icon={
@@ -183,6 +194,8 @@ function Navbar({ toggle, setToggle, setLogOutToggle }) {
             }
           />
           <NavbarMenu
+            url={url}
+            GetUrl={GetUrl}
             toggle={toggle}
             name={"Moderation"}
             icon={
@@ -201,9 +214,16 @@ function Navbar({ toggle, setToggle, setLogOutToggle }) {
             }
           />
         </div>
-        <div className={classes.nav_bottom}>
+        <div
+          className={`${classes.nav_bottom} ${
+            toggle || classes.toggleBottomLinks
+          }`}
+        >
           <NavbarMenu
+            url={url}
+            GetUrl={GetUrl}
             toggle={toggle}
+            setChangePasswordToggle={setChangePasswordToggle}
             name={"Settings"}
             icon={
               <svg
@@ -221,6 +241,8 @@ function Navbar({ toggle, setToggle, setLogOutToggle }) {
             }
           />
           <NavbarMenu
+            url={url}
+            GetUrl={GetUrl}
             setLogOutToggle={setLogOutToggle}
             toggle={toggle}
             name={"Log out"}
@@ -229,7 +251,6 @@ function Navbar({ toggle, setToggle, setLogOutToggle }) {
                 width="20"
                 height="28"
                 viewBox="0 0 20 28"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -249,7 +270,7 @@ function Navbar({ toggle, setToggle, setLogOutToggle }) {
         <div className={`row ${classes.row}`}>
           <div className={classes.left_top}>
             <div className={classes.pageName}>
-              <span>Dashboard</span>
+              <span>{url}</span>
             </div>
             <div className={classes.navSearch}>
               <input
