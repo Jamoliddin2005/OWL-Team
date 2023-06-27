@@ -35,7 +35,9 @@ function LogOut({ setLogOutToggle }) {
       <h2>Sign out account</h2>
       <p>Are you sure you want to log out of your account.</p>
       <div className={classes.buttons}>
-        <button>Confirm</button>
+        <button onClick={() => {
+            window.location.replace("/logout");
+        }}>Confirm</button>
         <button
           onClick={() => {
             setLogOutToggle(false);

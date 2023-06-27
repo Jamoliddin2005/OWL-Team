@@ -9,13 +9,15 @@ function NavbarMenu({
   setLogOutToggle,
   GetUrl,
   url,
+  link,
   setChangePasswordToggle,
-}) {
+}) { 
+ 
   return (
     <li
       className={`${classes.NavbarMenu} ${
-        name === "Log out" && classes.logOut
-      } ${name === url && classes.active}`}
+        name === "Log out" && classes.logOut 
+      } ${link.toLowerCase() === url.toLowerCase() && classes.active}` }
       onClick={(e) => {
         GetUrl();
         name === "Log out" && setLogOutToggle(true);
@@ -23,7 +25,7 @@ function NavbarMenu({
       }}
     >
       <Link
-        to={name}
+        to={link}
         onClick={(e) => {
           name === "Log out" && e.preventDefault();
           name === "Settings" && e.preventDefault();

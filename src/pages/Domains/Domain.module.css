@@ -21,6 +21,7 @@
 .LinksAndOthers {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 30px;
     border-bottom: 1px solid var(--greyBorderColor);
     width: 100%;
@@ -58,4 +59,170 @@
     line-height: 19px;
     letter-spacing: 0.01em;
     color: var(--whiteGrey);
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+    padding: 12px 30px;
+    justify-content: space-between;
+}
+
+.ID {
+    width: 50px;
+    margin-right: 0 !important;
+}
+
+.NS {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.NS button {
+    background: var(--inputBg);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteGrey);
+    padding: 8.5px 14px;
+    border: none;
+}
+
+.Google {
+    margin-right: 70px;
+}
+
+.Google .true {
+    background: var(--greyButtonSuccess);
+}
+
+.Google .false {
+    background: rgba(255, 107, 60, 0.2);
+}
+
+.Google button {
+    padding: 8.5px 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+.Date {
+    margin-right: 95px;
+}
+
+.status {
+    margin-right: 80px;
+}
+
+.status .Linked {
+    background: rgba(57, 255, 128, 0.2);
+    border-radius: 8px;
+    padding: 8.5px 14px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #C2E6CE;
+}
+
+.status .waiting {
+    background: rgba(255, 107, 60, 0.2);
+    color: #FF8B66;
+    border-radius: 8px;
+    padding: 8.5px 14px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+}
+
+.Delete button {
+    border-radius: 8px;
+    padding: 8.5px 14px;
+    border: none;
+    background: #181920;
+}
+
+.products {
+    max-width: 100%;
+    overflow-x: scroll;
+    max-height: 67vh;
+    overflow-y: scroll;
+}
+
+.Domain,
+.Link {
+    width: 100px;
+    margin-right: 0 !important;
+}
+
+.NS,
+.chainName {
+    width: 200px;
+    margin-right: 0 !important;
+}
+
+.Google,
+.Amount { 
+    margin-right: 0 !important;
+}
+
+.status{
+    width: 100px;
+    margin-right: 0 !important;
+}
+
+.Delete{
+    margin-right: 0 !important;
+    width: 50px;
+}
+
+.Date {
+    width: 170px;
+    margin-right: 0 !important;
+}
+
+.showBtn {
+    margin-bottom: 20px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(14, 15, 19, 0) 0%, #0E0F13 31.58%);
+    border-radius: 0px 0px 14px 14px;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.showBtn a {
+    width: 100%;
+    display: block;
+    background: var(--inputBg);
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px;
+    font-weight: 600;
+    transition: .3s;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+}
+
+.showBtn a:hover {
+    background-color: var(--darkButtonHoverBg);
+}
+
+.LoadingDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

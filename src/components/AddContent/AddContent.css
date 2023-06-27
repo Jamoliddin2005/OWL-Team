@@ -1,0 +1,24 @@
+.css-13cymwt-control {
+    background-color: var(--inputBg) !important;
+    border: 1px solid var(--greyColor) !important;
+}
+
+.css-t3ipsp-control {
+    background-color: var(--inputBg) !important;
+}
+
+.css-1dimb5e-singleValue {
+    color: white !important;
+}
+
+.css-t3ipsp-control:hover {
+    border: 1px solid var(--greyColor) !important;
+
+}
+.httpsSpan span{
+    width: 60px;
+}
+
+.httpsSpan input{
+    padding-left:75px;
+}

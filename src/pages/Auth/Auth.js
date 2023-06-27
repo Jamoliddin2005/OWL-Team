@@ -1,14 +1,41 @@
 import React, { useState } from "react";
 import classes from "./Auth.module.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import {HandleResponse} from "../utils"
+
+// const submitButton = document.querySelector("#submitButton");
+
+function MakeAuth(json) {
+  // submitButton.setAttribute("disabled", true);
+  HandleResponse(json);
+  if (json.success) {
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
+  } else if (!json.success) {
+    // submitButton.removeAttribute("disabled");
+  }
+}
 
 function Auth() {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
 
-  const SubmitHandler = () => {
-    console.log("Login: ", login);
-    console.log("Password: ", password);
+  const SubmitHandler = () => { 
+    let data = {
+      username: login,
+      password: password,
+    };
+    axios
+      .post("/auth", data, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+      .then(function (resp) { 
+        MakeAuth(resp.data);
+      });
   };
 
   return (
@@ -43,7 +70,7 @@ function Auth() {
             />
           </div>
 
-          <button>Continue</button>
+          <button id="submitButton">Continue</button>
         </form>
       </div>
     </div>

@@ -1,20 +1,38 @@
 .LogOut {
     height: 242px;
     width: 500px;
+}
 
+.AddContent .inputSpan1 {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.AddContent .inputOnee input {
+    padding-left: 70px;
 }
 
 .Withdrawal,
-.LogOut {
+.LogOut,
+.AddContent {
     border-radius: 14px;
     background: var(--navLeftBg);
     border: 1px solid var(--greyBorderColor);
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 30px;
     z-index: 10;
+}
+
+.AddContent {
+    width: 700px;
+}
+
+.Form {
+    position: relative;
 }
 
 .Withdrawal {
@@ -89,7 +107,7 @@ h2 {
     background: var(--darkButtonPressBg);
 }
 
-.Withdrawal .topP {
+.topP {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -161,4 +179,292 @@ h2 {
 .changePass {
     padding-top: 30px;
     padding-bottom: 40px;
+}
+
+
+
+/* acc */
+
+
+.lan_btn {
+    display: flex;
+    align-items: center;
+    background: var(--inputBg);
+    border-radius: 8px;
+    padding: 12px 14px;
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid var(--greyColor);
+}
+
+.lan_btn .lang_icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    fill: var(--whiteGrey);
+}
+
+.lan_btn span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+    margin-right: 10px;
+}
+
+.lan_btn .toggleIcon svg {
+    width: 13px;
+    height: 13px;
+    fill: var(--textGrey);
+}
+
+.input {
+    position: relative;
+}
+
+.Language {
+    width: 100%;
+}
+
+.languages {
+    width: 100%;
+    box-shadow: 0px 4px 25px 10px var(--darkColor);
+    border-radius: 8px;
+    border: 1px solid var(--greyBorderColor);
+    background: var(--navLeftBg);
+    position: absolute;
+    right: 0;
+    top: 45px;
+}
+
+.languages li {
+    padding-left: 15px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+    border-bottom: 1px solid var(--greyBorderColor);
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.languages li:last-child {
+    border-bottom: none;
+}
+
+.toggleIcon {
+    transform: rotate(-90deg);
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.inputs .input {
+    width: 100%;
+}
+
+.inputs input {
+    width: 100%;
+}
+
+
+.AbsoluteSpan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    background: var(--greyColor);
+    border-radius: 4px;
+    padding: 4.5px 10px;
+}
+
+.spanPlaceholder {
+    color: var(--textGrey);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+.AddContent input {
+    background: var(--inputBg);
+    border: 1px solid var(--greyColor);
+    border-radius: 8px;
+    padding: 11px 15px;
+    position: relative;
+}
+
+.spanAbsolute {
+    background: var(--greyColor);
+    border-radius: 4px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteColor);
+    z-index: 2;
+    left: 9px;
+    top: 9.2px;
+    width: 27px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputSpan input {
+    padding-left: 45px;
+}
+
+input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--whiteColor);
+    transition: .3s;
+}
+
+input:focus {
+    border: 1px solid var(--whiteGrey);
+}
+
+.AddContent label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--whiteGrey);
+    margin-top: 35px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputOne input {
+    width: 100%;
+}
+
+.inputTwo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputTwo .inputDiv {
+    width: 50%;
+}
+
+.inputTwo .inputDiv input {
+    width: 100%;
+}
+
+.fileUploader input {
+    display: none;
+}
+
+.fileUploader {
+    width: 100%;
+}
+
+.fileUploader label {
+    width: 100%;
+    height: 280px;
+    background: var(--inputBg);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--textGrey);
+}
+
+
+
+/* checkbox started */
+
+
+
+.checkboxDiv {
+    display: flex;
+    align-items: center;
+}
+
+
+.checkboxDiv input {
+    display: none;
+}
+
+.checkboxDiv .check {
+    border: 1px solid #FF6B3C;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    padding: 3px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.checkboxDiv .check .checked {
+    width: 100%;
+    height: 100%;
+    background: #FF6B3C;
+    display: none;
+    border-radius: 4px;
+}
+
+.checkboxDiv input:checked+.check .checked {
+    display: block;
+}
+
+.checkboxDiv label {
+    cursor: pointer;
+}
+
+.AddContent .languages {
+    z-index: 2;
+}
+
+/* checkbox end */
+.DrowdownBottom .Language {
+    position: relative;
+}
+
+.AddContent {
+    height: auto;
+    overflow-y: scroll;
+}
+
+.AddContent .buttons {
+    margin-top: 60px;
+}
+
+.AddContentLinks {
+    height: 95vh;
+}
+
+.textarea textarea {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    background-color: var(--inputBg) !important;
+    border: 1px solid var(--greyColor) !important;
+    color: var(--whiteColor);
+    height: 200px;
 }

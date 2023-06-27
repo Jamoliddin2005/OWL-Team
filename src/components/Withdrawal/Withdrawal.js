@@ -1,7 +1,36 @@
 import React from "react";
 import classes from "../LogOut/LogOut.module.css";
+import axios from "axios";
+import { HandleResponse } from "../../pages/utils";
 
-function Withdrawal({ setWithdrawalToggle }) {
+function sendWithdrawalRequest(amount) {
+  let data = {};
+  if (amount == "") {
+    HandleResponse({
+      success: false,
+      message: "Invalid parameters",
+    });
+  }
+  data.sum = parseInt(amount);
+  data.do = "createWithdrawRequest";
+  data.coin = "ETH";
+  axios
+    .post("/profile", data, {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    })
+    .then(function (resp) {
+      HandleResponse(resp.data);
+      if (resp.data.success) {
+        setTimeout(function () {
+          window.location.reload();
+        }, 3000);
+      }
+    });
+}
+
+function Withdrawal({ setWithdrawalToggle, account }) {
   return (
     <div className={classes.Withdrawal}>
       <div className={classes.close} onClick={() => setWithdrawalToggle(false)}>
@@ -31,7 +60,7 @@ function Withdrawal({ setWithdrawalToggle }) {
       <h2>Withdrawal</h2>
       <p className={classes.topP}>Available balance</p>
       <h1>
-        <span>$</span> 300.25
+        <span>$</span> {account.balance ? account.balance : 0.0}
       </h1>
       <form
         action=""
@@ -42,15 +71,6 @@ function Withdrawal({ setWithdrawalToggle }) {
         <div className={classes.inp}>
           <label htmlFor="amount">Amount</label>
           <input type="text" name="" id="amount" placeholder="Enter amount" />
-        </div>
-        <div className={classes.inp}>
-          <label htmlFor="eth">ETH address</label>
-          <input
-            type="text"
-            name=""
-            id="eth"
-            placeholder="0xb794f5ea0ba39494ce839613fffba74279579268"
-          />
         </div>
         <div className={classes.important}>
           <svg
@@ -74,7 +94,16 @@ function Withdrawal({ setWithdrawalToggle }) {
         </div>
 
         <div className={classes.buttons}>
-          <button type="submit">Confirm</button>
+          <button
+            type="submit"
+            onClick={() => {
+              let amount = document.querySelector("#amount").value;
+              sendWithdrawalRequest(amount);
+              setWithdrawalToggle(false);
+            }}
+          >
+            Confirm
+          </button>
           <button type="submit" onClick={() => setWithdrawalToggle(false)}>
             Cancel
           </button>

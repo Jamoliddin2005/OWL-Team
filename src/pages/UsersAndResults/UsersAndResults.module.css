@@ -1,0 +1,246 @@
+.UsersAndResults {
+    color: var(--whiteColor);
+}
+
+.bottom .filtr,
+.bottom .titles,
+.bottom .titles div {
+    display: flex;
+}
+
+.bottom .filtr,
+.bottom .titles,
+.bottom .titles div {
+    align-items: center;
+}
+
+.bottom .filtr,
+.bottom .titles,
+.data .data_item {
+    justify-content: space-between;
+}
+
+.data {
+    min-height: 57vh;
+    overflow-y: scroll;
+}
+
+.bottom {
+    background: var(--navLeftBg);
+    border: 1px solid var(--greyBorderColor);
+    border-radius: 14px;
+    width: 70%;
+    padding: 20px 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.usersRight {
+    width: 25%;
+    margin-right: 30px;
+}
+
+.bottom .filtr {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.bottom .filtr h3 {
+    font-family: var(--familySpaceGrotesk);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--whiteColor);
+}
+
+.bottom .titles {
+    width: 100%;
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--greyBorderColor);
+    margin-bottom: 10px;
+}
+
+
+.bottom .titles span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--whiteGrey);
+    margin-right: 4px;
+}
+
+
+
+
+.checkboxDiv {
+    display: flex;
+    align-items: center;
+}
+
+
+.checkboxDiv input {
+    display: none;
+}
+
+.checkboxDiv .check {
+    border: 1px solid #FF6B3C;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    padding: 3px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.checkboxDiv .check .checked {
+    width: 100%;
+    height: 100%;
+    background: #FF6B3C;
+    display: none;
+    border-radius: 4px;
+}
+
+.checkboxDiv input:checked+.check .checked {
+    display: block;
+}
+
+.checkboxDiv label {
+    cursor: pointer;
+}
+
+
+.listsProducts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.UsersAndResults .titles .AllCheck label,
+.UsersAndResults .checkProd label {
+    margin-right: 0;
+}
+
+.listsProducts {
+    padding: 18px 30px;
+}
+
+.listsProducts:nth-child(even) {
+    background: rgba(24, 25, 32, 0.3);
+}
+
+.addNew {
+    display: flex;
+    align-items: center;
+    padding: 8.5px 14px;
+    border-radius: 8px;
+    background: var(--defaultButtonBg);
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: var(--darkColor);
+}
+
+.addNew svg {
+    margin-right: 10px;
+}
+
+.searchAndDeletes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.searchAndDeletes .rightDeletes {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #999CB1;
+}
+
+.searchAndDeletes .rightDeletes button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #E23147;
+    margin-left: 30px;
+}
+
+.searchAndDeletes .rightDeletes button svg {
+    margin-right: 10px;
+}
+
+
+.searchAndDeletes .search {
+    position: relative;
+}
+
+
+.searchAndDeletes .search input {
+    width: 350px;
+    height: 36px;
+    background: #181920;
+    border: 1px solid #4C4E5D;
+    border-radius: 8px;
+    padding-left: 14px;
+}
+
+.searchAndDeletes .search input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4C4E5E;
+}
+
+.searchAndDeletes .search span {
+    right: 10px;
+    top: 9px;
+    position: absolute;
+}
+
+.searchAndDeletes .search input:focus {
+    border: 1px solid #999CB1;
+}
+
+.usersRight li {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #181920;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+}
+
+.usersRight li span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #999CB1;
+}
+
+.usersRight .active {
+    background: #FF6B3C;
+}
+
+.usersRight .active span {
+    color: #0A0B10;
+}
+
+.usersRight .active svg {
+    fill: red !important;
+}

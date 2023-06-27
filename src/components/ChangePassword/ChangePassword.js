@@ -45,6 +45,9 @@ function ChangePassword({ setChangePasswordToggle }) {
           }}
         >
           <div className={classes.inp}>
+            <input type="password" placeholder="Old password" />
+          </div>
+          <div className={classes.inp}>
             <input type="password" placeholder="Create a password" />
           </div>
           <div className={classes.inp}>
